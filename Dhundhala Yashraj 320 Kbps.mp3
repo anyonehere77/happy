@@ -1,9 +1,1 @@
-<audio id="birthday-song" src="music/dhundhala.mp3" loop autoplay style="display:none"></audio>
 
-  <script src="script.js"></script>
-  <script>
-    // Ensure music plays after user interaction (fixes autoplay restrictions)
-    window.addEventListener('click', function() {
-      var audio = document.getElementById('birthday-song');
-      if (audio) {
-        audio.play();

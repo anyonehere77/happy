@@ -1,3 +1,9 @@
+<audio id="birthday-song" src="music/dhundhala.mp3" loop autoplay style="display:none"></audio>
 
-
-file:///C:/Users/DELL/Downloads/saad/index.html/music/Dhundhala%20Yashraj%20320%20Kbps.mp3
+  <script src="script.js"></script>
+  <script>
+    // Ensure music plays after user interaction (fixes autoplay restrictions)
+    window.addEventListener('click', function() {
+      var audio = document.getElementById('birthday-song');
+      if (audio) {
+        audio.play();
